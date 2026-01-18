@@ -20,7 +20,7 @@ const power = function(base, exponent) {
 
 const factorial = function(factorialOf) {
   let result = 0;
-  if (factorialOf === 0) return 1;
+  if (factorialOf === 0 || factorialOf === 1) return 1;
   for (factorialOf; factorialOf >= 1 ; factorialOf--) {
     result += factorialOf * factorialOf - 1;
   }

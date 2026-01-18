@@ -18,11 +18,11 @@ const power = function(base, exponent) {
   return base ** exponent;
 };
 
-const factorial = function(factorialOf) {
-  let result = 0;
-  if (factorialOf === 0 || factorialOf === 1) return 1;
-  for (factorialOf; factorialOf >= 1 ; factorialOf--) {
-    result += factorialOf * factorialOf - 1;
+const factorial = function(n) {
+  let result = 1;
+  if (n === 0 || n === 1) return 1;
+  for(let i = 2; i <= n; i++) {
+    result *= i;
   }
 
   return result;

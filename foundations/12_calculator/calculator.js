@@ -10,7 +10,7 @@ const sum = function(arr) {
 	return arr.reduce((accumulator, num) => accumulator + num, 0);
 };
 
-const multiply = function() {
+const multiply = function(arr) {
   return arr.reduce((accumulator, num) => accumulator * num, 1);
 };
 
